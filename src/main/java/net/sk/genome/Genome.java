@@ -28,9 +28,7 @@ import org.slf4j.Logger;
 @Mod(Genome.MOD_ID)
 public class Genome
 {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "genome";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Genome()
