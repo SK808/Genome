@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": {"layer0": "genome:item/dummy"}
+  "textures": {
+    "0": "genome:item/dummy"
+  }
 }
