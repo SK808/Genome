@@ -1,3 +1,5 @@
 {
-  "item.genome.dummy": "Dummy"
+  "item.genome.dummy": "Dummy",
+  "creativemodetab.genome_tab": "Genome",
+  "block.genome.microscope_block": "Microscope",
 }

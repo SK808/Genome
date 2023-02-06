@@ -3,6 +3,7 @@ package net.sk.genome;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -22,6 +23,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.sk.genome.block.ModBlocks;
+import net.sk.genome.item.ModCreativeModeTabs;
 import net.sk.genome.item.ModItems;
 import org.slf4j.Logger;
 
@@ -44,6 +47,7 @@ public class Genome
         modEventBus.addListener(this::addCreative);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -53,7 +57,10 @@ public class Genome
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)//Used for adding creative tabs
     {
-
+        if(event.getTab() == ModCreativeModeTabs.GENOME_TAB){
+            event.accept(ModItems.DUMMY);
+            event.accept(ModBlocks.MICROSCOPE_BLOCK);
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
