@@ -58,8 +58,7 @@ public class Genome
     private void addCreative(CreativeModeTabEvent.BuildContents event)//Used for adding creative tabs
     {
         if(event.getTab() == ModCreativeModeTabs.GENOME_TAB){
-            event.accept(ModItems.DUMMY);
-            event.accept(ModBlocks.MICROSCOPE_BLOCK);
+
         }
     }
 

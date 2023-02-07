@@ -11,8 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Genome.MOD_ID);
 
-    public static final RegistryObject<Item> DUMMY = ITEMS.register("dummy",//adds new items
-            () -> new Item(new Item.Properties()));
+   public static final RegistryObject<Item> DUMMY = ITEMS.register("dummy",() -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {//registers eventbus
         ITEMS.register(eventBus);

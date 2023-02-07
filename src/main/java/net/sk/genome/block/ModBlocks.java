@@ -32,9 +32,9 @@ public class ModBlocks {
     }
 
     // adding the block itself
-    public  static final RegistryObject<Block> MICROSCOPE_BLOCK = registerBlock("microscope_block",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()));
+    //public  static final RegistryObject<Block> MICROSCOPE_BLOCK = registerBlock("microscope_block",
+    //()-> new Block(BlockBehaviour.Properties.of(Material.METAL)
+    //              .strength(6f).requiresCorrectToolForDrops()));
 
     public static void register(IEventBus eventBus){//adds fml eventbus so can be pointed from genome.java
         BLOCKS.register(eventBus);
