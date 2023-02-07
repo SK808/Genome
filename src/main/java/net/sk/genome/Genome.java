@@ -58,7 +58,7 @@ public class Genome
     private void addCreative(CreativeModeTabEvent.BuildContents event)//Used for adding creative tabs
     {
         if(event.getTab() == ModCreativeModeTabs.GENOME_TAB){
-
+            event.accept(ModBlocks.FOSSIL_ORE);
         }
     }
 
@@ -69,6 +69,7 @@ public class Genome
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+
         }
     }
 }
