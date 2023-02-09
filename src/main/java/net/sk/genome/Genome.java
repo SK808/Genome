@@ -59,6 +59,7 @@ public class Genome
     {
         if(event.getTab() == ModCreativeModeTabs.GENOME_TAB){
             event.accept(ModBlocks.FOSSIL_ORE);
+            event.accept(ModItems.FOSSIL);
         }
     }
 

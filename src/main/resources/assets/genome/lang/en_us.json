@@ -1,4 +1,5 @@
 {
   "creativemodetab.genome_tab": "Genome",
-  "block.genome.fossil_ore": "Fossil Ore"
+  "block.genome.fossil_ore": "Fossil Ore",
+  "item.genome.fossil": "Fossil"
 }
