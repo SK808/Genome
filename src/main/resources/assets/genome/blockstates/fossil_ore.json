@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "genome:block.fossil_ore" }
+    "": { "model": "genome:block/fossil_ore" }
   }
 }
